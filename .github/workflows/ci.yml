@@ -55,7 +55,7 @@ jobs:
         path: build/
 
     - name: Make binaries executable
-      run: chmod +x build/bin/*
+      run: chmod +x build/*
 
     - name: Run tests
       run: ctest --test-dir build --output-on-failure
