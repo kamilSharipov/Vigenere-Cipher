@@ -42,7 +42,7 @@ std::string encrypt(const std::string& plaintext,
     std::string ct;
     ct.reserve(pt.size());
 
-    for (std::size_t i = 0; i < ct.size(); ++i) {
+    for (std::size_t i = 0; i < pt.size(); ++i) {
         int p = char_to_int(pt[i]);
         int g = 0;
 
